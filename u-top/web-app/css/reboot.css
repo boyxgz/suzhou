@@ -1,0 +1,38 @@
+
+
+abbr,acronym{
+    border-bottom:1px dotted #000;
+}
+
+blockquote{
+    border-left:2px solid #4db6ac;
+    margin-bottom:1em;
+    padding-left:1em;
+}
+
+cite:before,q:before{
+    content:'\201C';
+}
+
+cite:after,q:after{
+    content:'\201D';
+}
+
+code,samp,kbd,command,var{
+    -moz-border-radius:.3em;
+    -webkit-border-radius:.3em;
+    border-radius:.3em;
+    background-color:#e2e2e2;
+    color:#000;
+    font-family:'Fira mono', 'Courier New', Courier, monospace;
+    font-size:85%;
+    letter-spacing:.05em;
+    padding:0 .5em;
+}
+
+
+
+b,strong,dl dt{
+    font-weight:700;
+}
+

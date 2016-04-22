@@ -1,0 +1,2 @@
+VoucherType
+key:subscribing_voucher

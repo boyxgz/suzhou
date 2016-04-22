@@ -1,0 +1,18 @@
+INSERT INTO `requestmap` VALUES 
+(1,0,'permitAll',NULL,'/'),
+(2,0,'permitAll',NULL,'/index'),
+(3,0,'permitAll',NULL,'/index.gsp'),
+(4,0,'permitAll',NULL,'/**/js/**'),
+(5,0,'permitAll',NULL,'/**/css/**'),
+(6,0,'permitAll',NULL,'/**/images/**'),
+(7,0,'permitAll',NULL,'/**/favicon.ico'),
+(8,0,'permitAll',NULL,'/login/**'),
+(9,0,'permitAll',NULL,'/logout/**'),
+(10,0,'permitAll',NULL,'/image/**'),
+(11,0,'permitAll',NULL,'/payCallback/**'),
+(12,0,'permitAll',NULL,'/shop/**'),
+(13,0,'permitAll',NULL,'/subscriberPortal/**'),
+(14,0,'permitAll',NULL,'/wxmpGate/**'),
+(15,0,'permitAll',NULL,'/portal/**'),
+(16,0,'ROLE_STATION',NULL,'/pos/**'),
+(17,0,'ROLE_ADMIN',NULL,'/**');

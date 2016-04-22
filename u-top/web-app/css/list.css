@@ -1,0 +1,34 @@
+@charset "utf-8";/* CSS Document */
+
+/* 列表页 */
+.list_menu{width:100%;float:left;}
+.list_menu a{width:25%;float:left;text-align:center;font:400 28px/77px "黑体";color:#888888;border-bottom:1px solid #abd13e;}
+.list_menu a.on{font:400 28px/75px "黑体";color:#444444;border-bottom:3px solid #abd13e;}
+.list_menu a img{margin-left:10px;}
+
+.list_sku{float:left;width:100%;margin-bottom:120px;}
+.list_sku ul{padding:20px 20px 0px 20px;}
+.list_sku li{width:100%;float:left;margin-bottom:20px;position:relative;}
+.list_sku li .sku_pic{width:180px;float:left;}
+.list_sku li .sku_pic a img{width:180px;height:180px;}
+.list_sku li .cart_ico{position:absolute;z-index:2;bottom:0px;left:0px;background:url(../images/none_bg.png);width:180px;font:400 30px/39px "黑体";color:#fff;text-align:center;}
+.list_sku li .cart_ico2{position:absolute;z-index:2;top:5px;left:5px;}
+.list_sku li .sku_name{border-top:1px solid #ededed;border-right:1px solid #ededed;border-bottom:1px solid #ededed;height:178px;margin-left:180px;}
+.list_sku li .sku_name .word01{font:400 28px/36px "黑体";color:#444444;height:72px;text-overflow:clip;display:block;overflow:hidden;margin:20px 25px 0px 25px;}
+.list_sku li .sku_name .word02{font:400 22px/24px "黑体";color:#ff9600;height:48px;text-overflow:clip;display:block;overflow:hidden;padding:0px 25px;}
+.list_sku li .sku_name .price{font:400 38px/55px "黑体";color:#ff9600;padding:0px 25px;}
+.list_sku li .sku_name .price span{font:400 34px/55px "黑体";color:#888888;text-decoration:line-through;margin-left:20px;}
+.list_sku li .btn{position:absolute;z-index:2;bottom:8px;right:0px;}
+.list_sku li .sku_name .ico{margin:0px 25px 0px 25px;}
+.list_sku li .sku_name .ico img{margin-right:15px;}
+.list_sku .buy{border:1px solid #ededed;text-align:center;font:400 30px/106px "黑体";color:#888888;padding-bottom:25px;}
+.list_sku .list_btn{line-height:18px;}
+
+/* 筛选条件 */
+.list_filter{float:left;width:100%;}
+.list_filter dl{padding:0px 30px;clear:both;}
+.list_filter dl dt{background:url(../images/arrow_s_b.png) right 47px no-repeat #fff;font:400 28px/55px "黑体";color:#444444;padding:25px 0px 0px 10px;border-bottom:1px solid #b8b8b8;}
+.list_filter dl dd{border-bottom:1px solid #ededed;width:100%;float:left;}
+.list_filter dl dd a{font:400 24px/30px "黑体";color:#888888;padding:35px;display:block;}
+.list_filter dl dd a img{margin-right:20px;float:left;}
+.list_filter .btn{text-align:center;padding:60px 0px 80px 0px;}

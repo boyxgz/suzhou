@@ -1,0 +1,57 @@
+{
+     "button":[
+      {
+           "name":"省钱攻略",
+           "sub_button":[
+            {
+               "type":"click",
+               "name":"特惠活动",
+               "key":"ICCARD_PROMOTION"
+            },
+            {
+               "type":"click",
+               "name":"便利店",
+               "key":"USMILE"
+            },
+            {
+               "type":"click",
+               "name":"自助加油",
+               "key":"SELFHELP-STATION"
+            }]
+      },
+      {
+           "name":"司机之家",
+           "sub_button":[
+            {
+               "name": "导航", 
+               "type": "location_select", 
+               "key": "rselfmenu_2_0"
+            },
+            {
+               "type":"click",
+               "name":"我的加油卡",
+               "key":"ABOUT-US"
+            },
+            {
+               "type":"view",
+               "name":"违章查询",
+               "url":"http://221.224.161.124/weixin/VehicleQuery.aspx?from=app"
+            }]
+      },
+      {
+           "name":"互动",
+           "sub_button":[
+		      {
+		           "type":"click",
+		           "name":"咨询与建议",
+		           "key":"key_comments"
+		      },
+		      {
+		           "type":"click",
+		           "name":"调查",
+		           "key":"key_survey"
+		      }
+		     ]
+		}
+      ]
+ }

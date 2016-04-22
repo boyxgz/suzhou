@@ -1,0 +1,8 @@
+{
+     "button":[
+      {
+		   "type":"view",
+		   "name":"🎁好客商城",
+		   "url":"http://hzyoumi.sh-hansi.com/shop2"
+      }]
+ }

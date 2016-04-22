@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wx>
+	<token>wx2fc522376d1831c4</token>
+	<appid>wx2fc522376d1831c4</appid>
+	<secret>95fe6dd42e9355220356a3b4b1ffcd83</secret>
+
+	<checkRequestRestrictly>true</checkRequestRestrictly>
+	<processor-chain>
+	
+		<processor>com.surelution.utop.SubscribeAction</processor>
+		<processor>com.surelution.utop.ScanAction</processor>
+		<processor>com.surelution.utop.NavigationAction</processor>
+		<processor>com.surelution.utop.CardServiceAction</processor>
+		<processor>com.surelution.utop.CommentTipAction</processor>
+		<processor>com.surelution.utop.SurveyAction</processor>
+		<processor>com.surelution.utop.MyPrizeAction</processor>
+		<processor>com.surelution.utop.VehicleViolateAction</processor>
+		<processor>com.surelution.utop.DynMatchAction</processor>
+		<processor>com.surelution.utop.TextCommandAction</processor>	
+		<processor>com.surelution.utop.ShakearoundAction</processor>
+		<processor>com.surelution.utop.MyDelieryAction</processor>
+		<processor>com.surelution.utop.TempQrScannedAction</processor>
+		<processor>com.surelution.utop.SubscribingAction</processor>
+		<processor>com.surelution.utop.CommentAction</processor>
+		<processor>com.surelution.utop.DefaultAction</processor>
+	</processor-chain>
+</wx>
