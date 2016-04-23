@@ -3,7 +3,7 @@ package com.surelution.utop
 import com.surelution.whistle.core.Attribute
 import com.surelution.whistle.core.NewsAttribute
 
-class LuckWheelAction extends JxBaseAction {
+class LuckWheelAction extends BaseSuzhouAction {
 
     @Override
     public boolean accept() {

@@ -9,7 +9,7 @@ import com.surelution.whistle.core.Attribute;
  * @author <a href="mailto:guangzong.syu@gmail.com">guangzong</a>
  *
  */
-class CommentTipAction extends JxBaseAction {
+class CommentTipAction extends BaseSuzhouAction {
 
 	/* (non-Javadoc)
 	 * @see com.surelution.whistle.core.BaseAction#accept()

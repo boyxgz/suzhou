@@ -3,7 +3,7 @@ package com.surelution.utop;
 import com.surelution.id.IDUtil
 import com.surelution.whistle.core.Attribute
 
-public class PriseStationAction extends JxBaseAction {
+public class PriseStationAction extends BaseSuzhouAction {
 
 	@Override
 	public boolean accept() {

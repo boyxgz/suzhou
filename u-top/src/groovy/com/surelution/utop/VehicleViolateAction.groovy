@@ -2,7 +2,7 @@ package com.surelution.utop
 
 import com.surelution.whistle.core.NewsAttribute
 
-class VehicleViolateAction extends JxBaseAction {
+class VehicleViolateAction extends BaseSuzhouAction {
 
     @Override
     public boolean accept() {

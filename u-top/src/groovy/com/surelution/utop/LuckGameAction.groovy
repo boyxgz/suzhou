@@ -2,7 +2,7 @@ package com.surelution.utop
 
 import com.surelution.whistle.core.Attribute
 
-class LuckGameAction extends JxBaseAction {
+class LuckGameAction extends BaseSuzhouAction {
 
     @Override
     public boolean accept() {

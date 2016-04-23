@@ -2,7 +2,7 @@ package com.surelution.utop
 
 import com.surelution.whistle.core.Attribute;
 
-class ChatChannelAction extends JxBaseAction {
+class ChatChannelAction extends BaseSuzhouAction {
 
     @Override
     public boolean accept() {

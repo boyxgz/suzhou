@@ -2,7 +2,7 @@ package com.surelution.utop
 
 import com.surelution.whistle.core.Attribute;
 
-class SalesAmountAction extends JxBaseAction {
+class SalesAmountAction extends BaseSuzhouAction {
     
     Employee e
 

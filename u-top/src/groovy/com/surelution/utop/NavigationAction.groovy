@@ -4,7 +4,7 @@ import com.surelution.locator.BaiduLocator
 import com.surelution.whistle.core.Attribute
 import com.surelution.whistle.core.NewsAttribute
 
-class NavigationAction extends JxBaseAction {
+class NavigationAction extends BaseSuzhouAction {
 
 	@Override
 	public boolean accept() {

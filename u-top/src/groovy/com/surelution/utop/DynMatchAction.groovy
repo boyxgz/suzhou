@@ -10,7 +10,7 @@ import com.surelution.whistle.core.NewsAttribute
  * @author <a href="mailto:guangzong.syu@gmail.com">guangzong</a>
  *
  */
-class DynMatchAction extends JxBaseAction {
+class DynMatchAction extends BaseSuzhouAction {
 	private MultiNewsMessage mnm;
 
 	/* (non-Javadoc)

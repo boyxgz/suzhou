@@ -3,7 +3,7 @@ package com.surelution.utop
 import com.surelution.id.IDUtil
 import com.surelution.whistle.core.Attribute
 
-class SubscribeAction extends JxBaseAction {
+class SubscribeAction extends BaseSuzhouAction {
 
 	@Override
 	public boolean accept() {

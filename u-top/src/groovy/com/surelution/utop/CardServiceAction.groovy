@@ -3,7 +3,7 @@ package com.surelution.utop
 import com.surelution.whistle.core.Attribute
 import com.surelution.whistle.core.NewsAttribute
 
-class CardServiceAction extends JxBaseAction {
+class CardServiceAction extends BaseSuzhouAction {
 
 	@Override
 	public boolean accept() {

@@ -2,7 +2,7 @@ package com.surelution.utop
 
 import com.surelution.whistle.core.Attribute
 
-class TextCommandAction extends JxBaseAction {
+class TextCommandAction extends BaseSuzhouAction {
 
 	@Override
 	public boolean accept() {

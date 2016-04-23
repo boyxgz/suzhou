@@ -13,7 +13,7 @@ import com.surelution.whistle.core.Attribute;
 import com.surelution.whistle.core.BaseAction
 
 
-abstract class JxBaseAction extends BaseAction {
+abstract class BaseSuzhouAction extends BaseAction {
 	
 	private Subscriber subscriber;
 	

@@ -2,7 +2,7 @@ package com.surelution.utop
 
 import com.surelution.whistle.core.Attribute;
 
-class EmployeeCertifingAction extends JxBaseAction {
+class EmployeeCertifingAction extends BaseSuzhouAction {
 
     
     @Override
