@@ -65,10 +65,8 @@ grails.databinding.dateFormats = [
 ]
 
 environments {
-//	alioss.images.rootUrl = "http://images.sh-hansi.com/"
-//	alioss.bucket.name = "res_images"
-	alioss.images.rootUrl = "http://hzimages.sh-hansi.com/"
-	alioss.bucket.name = "huzh"
+	alioss.images.rootUrl = "http://suzhimage.sh-hansi.com/"
+	alioss.bucket.name = "suzh"
 	templateMessage.delivery_validation = "gzpaXcpHxH0f6-oeuy6NYc6AlRI-4D5QXpLeS82U1Gw"
 	templateMessage.delivery_finished = "wDUfjVg0SDxpBXaEYZyImHFjP4CPj0Cg_9Q4yO1KeoM"
     development {
