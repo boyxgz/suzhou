@@ -14,7 +14,7 @@ environments {
     development {
         dataSource {
 		    username = "root"
-		    password = ""
+		    password = "123456"
             dbCreate = "update" // one of 'create', 'create-drop','update'
             url = "jdbc:mysql://localhost/suzhou_mp?useUnicode=true&characterEncoding=utf8"
 			loggingSql = true

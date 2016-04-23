@@ -1,5 +1,10 @@
 package com.surelution.utop
 
+/**
+ * 商品分类目录的创建
+ * @author xiaoming
+ *
+ */
 class Category {
 
     static constraints = {
