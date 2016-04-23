@@ -16,7 +16,6 @@ class ProductPricePlan {
 	 * 产品信息
 	 */
 	Product product
-	BigDecimal price
 	
 	/**
 	 * 价格执行开始时间（包含）
@@ -29,7 +28,7 @@ class ProductPricePlan {
 	Date activedEndAt
 	
 	/**
-	 * 温州公司叫货价（当期）
+	 * 叫货价（当期）
 	 */
 	BigDecimal costPrice
 	
