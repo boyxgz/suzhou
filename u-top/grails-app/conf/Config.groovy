@@ -73,7 +73,7 @@ environments {
 	templateMessage.delivery_finished = "wDUfjVg0SDxpBXaEYZyImHFjP4CPj0Cg_9Q4yO1KeoM"
     development {
         grails.logging.jul.usebridge = true
-		grails.serverURL = "http://surelution.sh-hansi.com"
+		grails.serverURL = "http://qiushengming.sh-hansi.com"
     }
     production {
         grails.logging.jul.usebridge = false

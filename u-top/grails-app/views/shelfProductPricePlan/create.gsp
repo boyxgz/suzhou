@@ -1,12 +1,11 @@
-<%@ page import="com.surelution.utop.ProductPricePlan" %>
+<%@ page import="com.surelution.utop.ShelfProductPricePlan" %>
 <%@ page import="java.text.SimpleDateFormat" %>
 <!DOCTYPE html>
 <html>
 	<head>
 		<meta name="layout" content="main">
-		<g:set var="entityName" value="${message(code: 'productPricePlan.label', default: 'ProductPricePlan')}" />
+		<g:set var="entityName" value="${message(code: 'shelfProductPricePlan.label', default: 'ShelfProductPricePlan')}" />
 		<title><g:message code="default.create.label" args="[entityName]" /></title>
-		
 		<script type="text/javascript" src="${resource(file:'js/jquery-1.9.1.min.js') }"></script>
 		<link href="${resource(dir:'css/jquery.datetimepicker.css')}" rel="stylesheet" type="text/css" />
 		<script type="text/javascript" src="${resource(file:'js/jquery.datetimepicker.js') }"></script>
@@ -30,21 +29,21 @@
 		</script>
 	</head>
 	<body>
-		<a href="#create-productPricePlan" class="skip" tabindex="-1"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
+		<a href="#create-shelfProductPricePlan" class="skip" tabindex="-1"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
 		<div class="nav" role="navigation">
 			<ul>
 				<li><a class="home" href="${createLink(uri: '/')}"><g:message code="default.home.label"/></a></li>
-				<li><g:link class="list" action="list"><g:message code="default.list.label" args="[entityName]" /></g:link></li>
+				<li><g:link class="list" action="list"><g:message code="shelfProductPricePlan.list.label" args="[entityName]" /></g:link></li>
 			</ul>
 		</div>
-		<div id="create-productPricePlan" class="content scaffold-create" role="main">
+		<div id="create-shelfProductPricePlan" class="content scaffold-create" role="main">
 			<h1><g:message code="default.create.label" args="[entityName]" /></h1>
 			<g:if test="${flash.message}">
 			<div class="message" role="status">${flash.message}</div>
 			</g:if>
-			<g:hasErrors bean="${productPricePlanInstance}">
+			<g:hasErrors bean="${shelfProductPricePlanInstance}">
 			<ul class="errors" role="alert">
-				<g:eachError bean="${productPricePlanInstance}" var="error">
+				<g:eachError bean="${shelfProductPricePlanInstance}" var="error">
 				<li <g:if test="${error in org.springframework.validation.FieldError}">data-field-id="${error.field}"</g:if>><g:message error="${error}"/></li>
 				</g:eachError>
 			</ul>
@@ -67,63 +66,60 @@
 							dt = sdf.format(t)
 						}
 					 %>
-					
-					<div class="fieldcontain ${hasErrors(bean: productPricePlanInstance, field: 'activedStartAt', 'error')} required">
+					<div class="fieldcontain ${hasErrors(bean: shelfProductPricePlanInstance, field: 'activedStartAt', 'error')} required">
 						<label for="activedStartAt">
-							<g:message code="productPricePlan.activedStartAt.label" default="Actived Start At" />
+							<g:message code="shelfProductPricePlan.activedStartAt.label" default="Actived Start At" />
 							<span class="required-indicator">*</span>
 						</label>
-						<g:textField name="activedStartAt" value="${df }"/>
+						<g:textField name="activedStartAt" value="${df }" id="activedStartAt"/>
 					</div>
-					
-					<div class="fieldcontain ${hasErrors(bean: productPricePlanInstance, field: 'activedEndAt', 'error')} required">
+					<div class="fieldcontain ${hasErrors(bean: shelfProductPricePlanInstance, field: 'activedEndAt', 'error')} required">
 						<label for="activedEndAt">
-							<g:message code="productPricePlan.activedEndAt.label" default="Actived End At" />
+							<g:message code="shelfProductPricePlan.activedEndAt.label" default="Actived End At" />
 							<span class="required-indicator">*</span>
 						</label>
 						<g:textField name="activedEndAt" value="${dt }"/>
 					</div>
 					
-					<div class="fieldcontain ${hasErrors(bean: productPricePlanInstance, field: 'costPrice', 'error')} required">
+					<div class="fieldcontain ${hasErrors(bean: shelfProductPricePlanInstance, field: 'costPrice', 'error')} required">
 						<label for="costPrice">
-							<g:message code="productPricePlan.costPrice.label" default="Cost Price" />
+							<g:message code="shelfProductPricePlan.costPrice.label" default="Cost Price" />
 							<span class="required-indicator">*</span>
 						</label>
-						<g:field name="costPrice" type="number" value="${fieldValue(bean: productPricePlanInstance, field: 'costPrice')}" required=""/>
+						<g:field name="costPrice" value="${fieldValue(bean: shelfProductPricePlanInstance, field: 'costPrice')}" required=""/>
 					</div>
 					
-					<div class="fieldcontain ${hasErrors(bean: productPricePlanInstance, field: 'retailPrice', 'error')} required">
+					<div class="fieldcontain ${hasErrors(bean: shelfProductPricePlanInstance, field: 'retailPrice', 'error')} required">
 						<label for="retailPrice">
-							<g:message code="productPricePlan.retailPrice.label" default="Retail Price" />
+							<g:message code="shelfProductPricePlan.retailPrice.label" default="Retail Price" />
 							<span class="required-indicator">*</span>
 						</label>
-						<g:field name="retailPrice" type="number" value="${fieldValue(bean: productPricePlanInstance, field: 'retailPrice')}" required="required"/>
+						<g:field name="retailPrice" value="${fieldValue(bean: shelfProductPricePlanInstance, field: 'retailPrice')}" required="required"/>
 					</div>
 					
-					<div class="fieldcontain ${hasErrors(bean: productPricePlanInstance, field: 'onSale', 'error')} ">
+					<div class="fieldcontain ${hasErrors(bean: shelfProductPricePlanInstance, field: 'onSale', 'error')} ">
 						<label for="onSale">
-							<g:message code="productPricePlan.onSale.label" default="On Sale" />
+							<g:message code="shelfProductPricePlan.onSale.label" default="On Sale" />
 							
 						</label>
-						<g:checkBox name="onSale" value="${productPricePlanInstance?.onSale}" />
+						<g:checkBox name="onSale" value="${shelfProductPricePlanInstance?.onSale}" />
 					</div>
 					
-					<%--<div class="fieldcontain ${hasErrors(bean: productPricePlanInstance, field: 'price', 'error')} required">
+					<div class="fieldcontain ${hasErrors(bean: shelfProductPricePlanInstance, field: 'price', 'error')} required">
 						<label for="price">
-							<g:message code="productPricePlan.price.label" default="Price" />
+							<g:message code="shelfProductPricePlan.price.label" default="Price" />
 							<span class="required-indicator">*</span>
 						</label>
-						<g:field name="price" type="number" value="${fieldValue(bean: productPricePlanInstance, field: 'price')}" required />
-					</div>--%>
-					
-					<div class="fieldcontain ${hasErrors(bean: productPricePlanInstance, field: 'product', 'error')} required">
-						<label for="product">
-							<g:message code="productPricePlan.product.label" default="Product" />
-							<span class="required-indicator">*</span>
-						</label>
-						<g:select id="product" name="product.id" from="${com.surelution.utop.Product.list()}" optionKey="id" optionValue="${{it.name + " X " + it.packingCount + "，货号为：" + it.code} }" required="" value="${productPricePlanInstance?.product?.id}" class="many-to-one"/>
+						<g:field name="price" value="${fieldValue(bean: shelfProductPricePlanInstance, field: 'price')}" required="required"/>
 					</div>
 					
+					<div class="fieldcontain ${hasErrors(bean: shelfProductPricePlanInstance, field: 'product', 'error')} required">
+						<label for="product">
+							<g:message code="shelfProductPricePlan.product.label" default="Product" />
+							<span class="required-indicator">*</span>
+						</label>
+						<g:select id="product" name="product.id" from="${com.surelution.utop.Product.list()}" optionKey="id" optionValue="${{it.name + " X " + it.packingCount + "，货号为：" + it.code} }" required="" value="${shelfProductPricePlanInstance?.product?.id}" class="many-to-one"/>
+					</div>
 				</fieldset>
 				<fieldset class="buttons">
 					<g:submitButton name="create" class="save" value="${message(code: 'default.button.create.label', default: 'Create')}" />
