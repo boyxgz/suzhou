@@ -22,7 +22,7 @@
 					
 						<th>${message(code: 'product.packingCount.label', default: 'Packing<br/>Count')}</th>
 					
-						<th>${message(code: 'productPricePlan.price.label', default: 'Price')}</th>
+						<%--<th>${message(code: 'productPricePlan.price.label', default: 'Price')}</th>--%>
 					
 						<th>${message(code: 'productPricePlan.costPrice.label', default: 'Cost<br/>Price')}</th>
 					
@@ -45,7 +45,7 @@
 					
 						<td>${productPricePlanInstance.product.packingCount}</td>
 					
-						<td>${fieldValue(bean: productPricePlanInstance, field: "price")}</td>
+						<%--<td>${fieldValue(bean: productPricePlanInstance, field: "price")}</td>--%>
 					
 						<td>${fieldValue(bean: productPricePlanInstance, field: "costPrice")}</td>
 					

@@ -12,12 +12,12 @@
 		<div class="nav" role="navigation">
 			<ul>
 				<li><a class="home" href="${createLink(uri: '/')}"><g:message code="default.home.label"/></a></li>
-				<li><g:link class="list" action="list"><g:message code="default.list.label" args="[entityName]" /></g:link></li>
-				<li><g:link class="create" action="create"><g:message code="default.new.label" args="[entityName]" /></g:link></li>
+				<li><g:link class="list" action="list"><g:message code="groupBuyPriceRule.list.label" args="[entityName]" /></g:link></li>
+				<li><g:link class="create" action="create"><g:message code="groupBuyPriceRule.new.label" args="[entityName]" /></g:link></li>
 			</ul>
 		</div>
 		<div id="show-groupBuyPriceRule" class="content scaffold-show" role="main">
-			<h1><g:message code="default.show.label" args="[entityName]" /></h1>
+			<h1><g:message code="groupBuyPriceRule.show.label" args="[entityName]" /></h1>
 			<g:if test="${flash.message}">
 			<div class="message" role="status">${flash.message}</div>
 			</g:if>
@@ -45,7 +45,9 @@
 				<li class="fieldcontain">
 					<span id="plan-label" class="property-label"><g:message code="groupBuyPriceRule.plan.label" default="Plan" /></span>
 					
-						<span class="property-value" aria-labelledby="plan-label"><g:link controller="groupProductPricePlan" action="show" id="${groupBuyPriceRuleInstance?.plan?.id}">${groupBuyPriceRuleInstance?.plan?.encodeAsHTML()}</g:link></span>
+						<span class="property-value" aria-labelledby="plan-label">
+							<g:link controller="groupProductPricePlan" action="show" id="${groupBuyPriceRuleInstance?.plan?.id}">
+								${groupBuyPriceRuleInstance?.plan?.product?.name} X ${groupBuyPriceRuleInstance?.plan?.product?.packingCount}， 货号为  ${groupBuyPriceRuleInstance?.plan?.product?.code}</g:link></span>
 					
 				</li>
 				</g:if>
@@ -53,7 +55,6 @@
 				<g:if test="${groupBuyPriceRuleInstance?.price}">
 				<li class="fieldcontain">
 					<span id="price-label" class="property-label"><g:message code="groupBuyPriceRule.price.label" default="Price" /></span>
-					
 						<span class="property-value" aria-labelledby="price-label"><g:fieldValue bean="${groupBuyPriceRuleInstance}" field="price"/></span>
 					
 				</li>

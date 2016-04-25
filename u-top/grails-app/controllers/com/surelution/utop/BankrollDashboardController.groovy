@@ -13,7 +13,7 @@ class BankrollDashboardController {
 		def vouchers = Voucher.findAllByStatus(VoucherStatus.USED)
 		
 		def payPermit = AppVar.findByKey("PAY-PERMIT")?.value
-		
+		println payments
 		[imprests:imprests, payments:payments, orders:orders, vouchers:vouchers, payPermit:payPermit]
 	}
 	

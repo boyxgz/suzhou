@@ -16,7 +16,11 @@ class GroupBuyPriceRuleController {
     }
 
     def create() {
-        [groupBuyPriceRuleInstance: new GroupBuyPriceRule(params)]
+		def groupProductPricePlan = ProductPricePlan.createCriteria().list{
+			eq("class",GroupProductPricePlan)
+		}
+		println groupProductPricePlan
+        [groupBuyPriceRuleInstance: new GroupBuyPriceRule(params),groupProductPricePlan:groupProductPricePlan]
     }
 
     def save() {

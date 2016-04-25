@@ -85,14 +85,14 @@
 				</li>
 				</g:if>
 			
-				<g:if test="${productPricePlanInstance?.price}">
+				<%--<g:if test="${productPricePlanInstance?.price}">
 				<li class="fieldcontain">
 					<span id="price-label" class="property-label"><g:message code="productPricePlan.price.label" default="Price" /></span>
 					
 						<span class="property-value" aria-labelledby="price-label"><g:fieldValue bean="${productPricePlanInstance}" field="price"/></span>
 					
 				</li>
-				</g:if>
+				</g:if>--%>
 			
 				<g:if test="${productPricePlanInstance?.dateCreated}">
 				<li class="fieldcontain">

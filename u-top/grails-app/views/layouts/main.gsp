@@ -28,7 +28,7 @@
 		    	</div>
 		    	</div>
 			<div id="leftcol">
-				<sec:ifAnyGranted roles="ROLE_STATION">
+				<sec:ifAnyGranted roles="ROLE_ADMIN">
 				<p>
 					<g:link url="${resource(dir:'pos')}" >提货</g:link>
 				</p>
@@ -45,7 +45,7 @@
 					<g:link url="${resource(dir:'orderForm/limitedList')}" >误锁定代金券</g:link>
 				</p>
 				</sec:ifAnyGranted>
-				<sec:ifAnyGranted roles="ROLE_SALINGMNG">
+				<sec:ifAnyGranted roles="ROLE_ADMIN">
 				<p>
 					<g:link url="${resource(dir:'subscriberChannel/report')}" >推广报表</g:link>
 				</p>
@@ -57,7 +57,7 @@
 				</p>
 				
 				</sec:ifAnyGranted>
-				<sec:ifAnyGranted roles="ROLE_FINANCIAL">
+				<sec:ifAnyGranted roles="ROLE_ADMIN">
 				<p>
 					<g:link url="${resource(dir:'imprest/waitingForConfirm')}" >保证金审批</g:link>
 				</p>
@@ -88,7 +88,7 @@
 					<g:link url="${resource(dir:'optimizing')}" >技术优化</g:link>
 				</p>
 				<p>
-					<g:link url="${resource(dir:'productPricePlan/productPosition')}" >商品顺序</g:link>
+					<g:link url="${resource(dir:'shelfProductPricePlan/productPosition')}" >商品顺序</g:link>
 				</p>
 				<p>
 					<g:link url="${resource(dir:'user')}" >用户管理</g:link>

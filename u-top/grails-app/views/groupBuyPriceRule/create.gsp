@@ -11,11 +11,11 @@
 		<div class="nav" role="navigation">
 			<ul>
 				<li><a class="home" href="${createLink(uri: '/')}"><g:message code="default.home.label"/></a></li>
-				<li><g:link class="list" action="list"><g:message code="default.list.label" args="[entityName]" /></g:link></li>
+				<li><g:link class="list" action="list"><g:message code="groupBuyPriceRule.list.label" args="[entityName]" /></g:link></li>
 			</ul>
 		</div>
 		<div id="create-groupBuyPriceRule" class="content scaffold-create" role="main">
-			<h1><g:message code="default.create.label" args="[entityName]" /></h1>
+			<h1><g:message code="groupBuyPriceRule.create.label" args="[entityName]" /></h1>
 			<g:if test="${flash.message}">
 			<div class="message" role="status">${flash.message}</div>
 			</g:if>
@@ -47,9 +47,10 @@
 					<div class="fieldcontain ${hasErrors(bean: groupBuyPriceRuleInstance, field: 'plan', 'error')} required">
 						<label for="plan">
 							<g:message code="groupBuyPriceRule.plan.label" default="Plan" />
-							<span class="required-indicator">*</span>
+							<span class="required-indicator">*</span>																	
 						</label>
-						<g:select id="plan" name="plan.id" from="${com.surelution.utop.GroupProductPricePlan.list()}" optionKey="id" required="" value="${groupBuyPriceRuleInstance?.plan?.id}" class="many-to-one"/>
+						<g:select id="plan" name="plan.id" from="${com.surelution.utop.GroupProductPricePlan.list()}" optionKey="id" 
+							optionValue="${{gppp -> "${gppp.product.name} ${"X"} ${gppp.product.packingCount} ${"，货号为:"}${gppp.product.code}"}}" value="${groupBuyPriceRuleInstance?.plan?.id}" required="" class="many-to-one"/>
 					</div>
 					
 					<div class="fieldcontain ${hasErrors(bean: groupBuyPriceRuleInstance, field: 'price', 'error')} required">
@@ -63,7 +64,6 @@
 					<div class="fieldcontain ${hasErrors(bean: groupBuyPriceRuleInstance, field: 'settled', 'error')} ">
 						<label for="settled">
 							<g:message code="groupBuyPriceRule.settled.label" default="Settled" />
-							
 						</label>
 						<g:checkBox name="settled" value="${groupBuyPriceRuleInstance?.settled}" />
 					</div>

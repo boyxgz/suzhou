@@ -70,7 +70,7 @@
 					
 						<g:sortableColumn property="product" title="${message(code: 'product.packingCount.label', default: 'Packing<br/>Count')}" />
 					
-						<g:sortableColumn property="price" title="${message(code: 'productPricePlan.price.label', default: 'Price')}" />
+						<%--<g:sortableColumn property="price" title="${message(code: 'productPricePlan.price.label', default: 'Price')}" />--%>
 					
 						<g:sortableColumn property="costPrice" title="${message(code: 'productPricePlan.costPrice.label', default: 'Cost<br/>Price')}" />
 					

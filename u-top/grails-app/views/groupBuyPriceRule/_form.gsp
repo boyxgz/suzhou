@@ -1,6 +1,14 @@
 <%@ page import="com.surelution.utop.GroupBuyPriceRule" %>
 
 
+<div class="fieldcontain ${hasErrors(bean: groupBuyPriceRuleInstance, field: 'plan', 'error')} required">
+	<label for="plan">
+		<g:message code="groupBuyPriceRule.plan.label" default="Plan" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:select id="plan" name="plan.id" from="${com.surelution.utop.GroupProductPricePlan.list()}" optionKey="id"
+		optionValue="${{gppp -> "${gppp.product.name} ${"X"} ${gppp.product.packingCount} ${"，货号为:"}${gppp.product.code}"}}" required="" value="${groupBuyPriceRuleInstance?.plan?.id}" class="many-to-one"/>
+</div>
 
 <div class="fieldcontain ${hasErrors(bean: groupBuyPriceRuleInstance, field: 'amountFrom', 'error')} required">
 	<label for="amountFrom">
@@ -18,20 +26,12 @@
 	<g:field name="amountTo" type="number" value="${groupBuyPriceRuleInstance.amountTo}" required=""/>
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: groupBuyPriceRuleInstance, field: 'plan', 'error')} required">
-	<label for="plan">
-		<g:message code="groupBuyPriceRule.plan.label" default="Plan" />
-		<span class="required-indicator">*</span>
-	</label>
-	<g:select id="plan" name="plan.id" from="${com.surelution.utop.GroupProductPricePlan.list()}" optionKey="id" required="" value="${groupBuyPriceRuleInstance?.plan?.id}" class="many-to-one"/>
-</div>
-
 <div class="fieldcontain ${hasErrors(bean: groupBuyPriceRuleInstance, field: 'price', 'error')} required">
 	<label for="price">
 		<g:message code="groupBuyPriceRule.price.label" default="Price" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:field name="price" value="${fieldValue(bean: groupBuyPriceRuleInstance, field: 'price')}" required=""/>
+	<g:field name="price" type="" value="${fieldValue(bean: groupBuyPriceRuleInstance, field: 'price')}" required=""/>
 </div>
 
 <div class="fieldcontain ${hasErrors(bean: groupBuyPriceRuleInstance, field: 'settled', 'error')} ">

@@ -58,13 +58,13 @@
 	<g:checkBox name="onSale" value="${productPricePlanInstance?.onSale}" />
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: productPricePlanInstance, field: 'price', 'error')} required">
+<%--<div class="fieldcontain ${hasErrors(bean: productPricePlanInstance, field: 'price', 'error')} required">
 	<label for="price">
 		<g:message code="productPricePlan.price.label" default="Price" />
 		<span class="required-indicator">*</span>
 	</label>
 	<g:field name="price" value="${fieldValue(bean: productPricePlanInstance, field: 'price')}" required=""/>
-</div>
+</div>--%>
 
 <div class="fieldcontain ${hasErrors(bean: productPricePlanInstance, field: 'product', 'error')} required">
 	<label for="product">

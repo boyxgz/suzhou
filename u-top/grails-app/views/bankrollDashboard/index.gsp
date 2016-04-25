@@ -16,10 +16,12 @@
 		</div>
 		<div id="show-imprest" class="content scaffold-show" role="main">
 			<g:if test="${flash.message}">
-			<div class="message" role="status">${flash.message}</div>
+				<div class="message" role="status">${flash.message}</div>
 			</g:if>
 			<g:set var="imprest" value="${imprests.sum{it.amount} }"/>
-			<g:set var="payment" value="${payments.sum{it.amount}/100 }"/>
+			<g:if test="${paymets }">
+				<g:set var="payment" value="${payments?.sum{it?.amount}/100 }"/>
+			</g:if>
 			<g:set var="order" value="${orders.sum{it.amount} }"/>
 			<g:set var="voucher" value="${vouchers.sum{it.writeOff} }"/>
 			<ol class="property-list imprest">
